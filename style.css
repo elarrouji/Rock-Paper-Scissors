@@ -1,0 +1,57 @@
+#welcome {
+    width: 50vw;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 25px;
+}
+.score {
+    display: flex;
+    flex-direction: row;
+    margin: 1.5em auto 0 auto;
+    border-radius: 5px;
+}
+#user-score {
+    background-color: antiquewhite;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#computer-score {
+    background-color: black;
+    color: antiquewhite;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+p {
+    width: 30vw;
+    height: 2em;
+    padding: 20px;
+    font-size: 20px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #b8b894;
+    font-family: 'Chelsea Market', cursive;
+}
+button {
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+}
+button:hover {
+    cursor: pointer;
+}
+#paper {
+    margin: 0 10px;
+}
+i {
+    font-size: 25px;
+}
+#redo {
+    font-size: 15px;
+    margin-right: 5px;
+}
+#reset {
+    margin: 20px auto;
+}
