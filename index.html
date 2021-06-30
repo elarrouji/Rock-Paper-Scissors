@@ -12,17 +12,24 @@
             <p id="user-score">Your Score: 0</p>
             <p id="computer-score">Computer Score: 0</p>
         </div>
-        <h3 id="round-message">Let's start!</h3>
-        <div class="choice">
-            <button onclick="game(this.value)" class="choice" id="rock" value="rock"><i class="far fa-hand-rock"></i></button>
-            <button onclick="game(this.value)" class="choice" id="paper" value="paper"><i class="far fa-hand-paper"></i></button>
-            <button onclick="game(this.value)" class="choice" id="scissors" value ="scissors"><i class="far fa-hand-scissors"></i></button>
+        <h3>Your Choice</h3>
+        <div class="choices">
+            <button class="choice" id="rock" value="rock"><i class="far fa-hand-rock"></i></button>
+            <button class="choice" id="paper" value="paper"><i class="far fa-hand-paper"></i></button>
+            <button class="choice" id="scissors" value ="scissors"><i class="far fa-hand-scissors"></i></button>
         </div>
+        <h3>Computer's Choice</h3>
+        <div class="choices">
+            <button disabled class="computer-choice" id="rock" value="rock"><i class="far fa-hand-rock"></i></button>
+            <button disabled class="computer-choice" id="paper" value="paper"><i class="far fa-hand-paper"></i></button>
+            <button disabled class="computer-choice" id="scissors" value ="scissors"><i class="far fa-hand-scissors"></i></button>
+        </div>
+        <h3 id="round-message">Let's start!</h3>
         <button onclick = "reset()" id="reset" disabled><i id="redo" class="fas fa-redo"></i>Try Again</button>
         <h2 id="last-message"></h2>
         <h2 id="winner"></h2>
-        <script>
-          
+        <script src="./script.js">
+         /* 
           let userScore = 0;
           let computerScore = 0;
           let options = ["rock", "paper", "scissors"];
@@ -61,10 +68,7 @@
                 document.getElementById("paper").disabled = true;
                 document.getElementById("scissors").disabled = true;
                 let winner = document.getElementById("winner");
-                if (userScore === computerScore) {
-                    winner.textContent = "Wooow That's a Tie";
-                    document.querySelector('body').style.backgroundColor = "#ffff80";
-                } else if (userScore > computerScore) {
+                if (userScore > computerScore) {
                     winner.textContent = "Aaand The Winner Is You, CONGRATS!";
                     document.querySelector('body').style.backgroundColor = "#99ff33";
                 } else if (userScore < computerScore) {
@@ -87,6 +91,7 @@
                 document.getElementById("reset").disabled = true; 
                 document.querySelector("body").style.backgroundColor = "#b8b894";
           }
+          */
         </script>
     </body>
 </html>

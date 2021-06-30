@@ -55,3 +55,8 @@ i {
 #reset {
     margin: 20px auto;
 }
+
+.selected {
+    border: 5px solid black;
+}
+
