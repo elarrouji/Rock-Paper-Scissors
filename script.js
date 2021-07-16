@@ -43,10 +43,10 @@ function game(clicked) {
         document.getElementById("scissors").disabled = true;
         let winner = document.getElementById("winner");
         if (userScore > computerScore) {
-            winner.textContent = "Aaand The Winner Is You, CONGRATS!";
+            winner.textContent = "You Won, The Computer Lost";
             document.querySelector('body').style.backgroundColor = "#99ff33";
         } else if (userScore < computerScore) {
-            winner.textContent = "You Lost to a Computer Dickhead!!";
+            winner.textContent = "You Lost, The Computer Won";
             document.querySelector('body').style.backgroundColor = "#ff471a";
         }
     }
