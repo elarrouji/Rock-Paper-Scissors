@@ -45,7 +45,7 @@ function game(clicked) {
             winner.textContent = "You Won, The Computer Lost";
             document.querySelector('body').style.backgroundColor = "#99ff33";
         } else if (userScore < computerScore) {
-            winner.textContent = "You Lost, The Computer Won";
+            winner.textContent = "You Lost, he Computer Won";
             document.querySelector('body').style.backgroundColor = "#ff471a";
         }
     }
@@ -58,7 +58,6 @@ function reset() {
     document.getElementById("rock").disabled = false;
     document.getElementById("paper").disabled = false;
     document.getElementById("scissors").disabled = false;
-    document.getElementById("last-message").textContent = "";
     winner.textContent = "";
     para.textContent = "Let's start!";
     document.getElementById("reset").disabled = true; 
