@@ -45,7 +45,7 @@ function game(clicked) {
             winner.textContent = "You Won, The Computer Lost";
             document.querySelector('body').style.backgroundColor = "#99ff33";
         } else if (userScore < computerScore) {
-            winner.textContent = "You Lost, he Computer Won";
+            winner.textContent = "You Lost, The Computer Won";
             document.querySelector('body').style.backgroundColor = "#ff471a";
         }
     }
