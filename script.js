@@ -37,7 +37,6 @@ function game(clicked) {
     spanComputerScore.textContent = "Computer Score: " + computerScore; 
     if (userScore == 5 || computerScore == 5 ) {
         document.getElementById("reset").disabled = false; 
-        document.getElementById("last-message").textContent = "The Game has Ended."
         document.getElementById("rock").disabled = true;
         document.getElementById("paper").disabled = true;
         document.getElementById("scissors").disabled = true;
